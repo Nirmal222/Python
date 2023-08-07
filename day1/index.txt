@@ -1,0 +1,6 @@
+1. Install Python on my machine
+2. Python is an interpreted programming language, this means that as a developer you write Python (.py) 
+   files in a text editor and then put those files into the python interpreter to be executed.
+3. Note: To access another drive, type the drive’s letter, followed by :. For instance, 
+         if you wanted to change the drive from C: to D:, you should type:
+4. In python Identation is to represent a block of code while in other languages it is just for representation.
