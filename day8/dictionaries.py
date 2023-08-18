@@ -70,3 +70,66 @@ thisdict = {
 }
 if "model" in thisdict:
   print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+
+# Change Values
+# You can change the value of a specific item by referring to its key name:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+
+# Update the "year" of the car by using the update() method:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020})
+
+# Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["color"] = "red"
+print(thisdict)
+
+# The del keyword removes the item with the specified key name:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+
+# You can also use the values() method to return values of a dictionary:
+# You can use the keys() method to return the keys of a dictionary:
+
+
+# Copy a Dictionary
+# You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a reference to dict1, and changes made in dict1 will automatically also be made in dict2.
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+# Make a copy of a dictionary with the dict() function:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = dict(thisdict)
+print(mydict)
+
+
+# Access Items in Nested Dictionaries
+# To access items from a nested dictionary, you use the name of the dictionaries, starting with the outer dictionary:
+print(myfamily["child2"]["name"])
